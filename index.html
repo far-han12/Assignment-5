@@ -12,7 +12,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- DaisyUi and tailwind cdn end  -->
-    <!-- gooogle fonts -->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -64,15 +64,16 @@
           <div class="text-center absolute left-[19%] bottom-[45%] space-y-5">
             <h1 class="text-white font-extrabold text-7xl">
               End-to-End Travel with <br /><span class="text-[#1DD100]"
-                >P-Paribahan</span
+                >Greenline Paribahan</span
               >
             </h1>
             <p class="text-xl text-white">
-              Welcome to P-Paribahan . One of the best transport services.
+              Welcome to Greenline Paribahan . One of the best transport services.
             </p>
-            <button id="scroll-button" class="btn bg-[#1DD100] btn-success">
-              Buy tickets
-            </button>
+            <div id="scroll-btn" class="">
+              <button class=""><a href="#Greenline-main" class="btn scroll-smooth text- bg-[#1DD100] border-0 text-xl font-bold ]"
+                >Buy Tickets</a></button>
+            </div>
           </div>
         </div>
       </section>
@@ -89,7 +90,7 @@
             class="bg-[#FFBF0F] w-1/2 flex justify-around rounded-2xl items-center relative h-[200px]"
           >
             <div class="p-5 w-1/2">
-              <p class="text-4xl font-extrabold">
+              <p class="text-4xl font-extrabold" >
                 15% OFF <br />
                 <span class="text-[#030712CC] text-xl font-semibold">
                   on your next purchase </span
@@ -107,7 +108,7 @@
             </div>
             <div class="p-5 text-left">
               <p class="text-center font-bold text-3xl">
-                NEW15 <br /><span class="text-[#03071266] text-xl"
+                <span id="coupon-1">NEW15</span> <br /><span class="text-[#03071266] text-xl"
                   >Coupon Code</span
                 >
               </p>
@@ -138,7 +139,7 @@
             </div>
             <div class="p-5 text-left">
               <p class="text-center font-bold text-3xl">
-                Couple 20<br /><span class="text-[#03071266] text-xl"
+               <span id="coupon-2">Couple 20</span><br /><span class="text-[#03071266] text-xl"
                   >Couple Code</span
                 >
               </p>
@@ -146,20 +147,20 @@
           </div>
           <!--  -->
         </div>
-        <div class="text-center mt-10">
-          <button class="btn text-[#1DD100] border-2 border-[#1DD100] bg-white">
+        <div class="text-center mt-10 bg-white">
+          <button class="btn text-[#1DD100] border-2 border-[#1DD100]  bg-white">
             See all offers
           </button>
         </div>
       </section>
       <!-- PH paribahan -->
-      <section
-        class="border-t-2 bg-[#F7F8F8] border-[#1DD100] rounded-t-[88px]"
+      <section id="Greenline-main"
+        class="border-t-2 bg-[#F7F8F8]  border-[#1DD100] rounded-t-[88px]"
       >
         <!-- main container div -->
         <div class="container px-28 mx-auto mt-10">
           <h1 class="text-[#030712] text-4xl font-bold text-center">
-            P.H Paribahan
+            Greenline Paribahan
           </h1>
           <p class="text-center text-[#03071299] text-lg mt-5 mb-14">
             As a leading enterprise in the industry, we pride ourselves on
@@ -188,7 +189,7 @@
                 </div>
                 <!-- title div end -->
                 <div class="">
-                  <a class="btn text-[#1DD100] text-xl font-bold bg-[#1DD1001A]"
+                  <a id="seats-left" class="btn text-[#1DD100] text-xl font-bold bg-[#1DD1001A]"
                     >8 seats left
                     <img
                       src="B9A5-smart-ticketing-main/images/seat-green.png"
@@ -229,7 +230,7 @@
               <div class="mx-auto">
                 <img src="B9A5-smart-ticketing-main/images/fare.png" alt="" />
               </div>
-              <p class="text-4xl font-bold text-center">554 Taka</p>
+              <p class="text-4xl font-bold text-center" ><span id="seat-per-price">550</span>Taka</p>
               <p class="text-center">Per seat</p>
             </div>
           </div>
@@ -247,19 +248,20 @@
               <div
                 class="flex items-center justify-between mb-5 pr-20 border-b p-5 border-[#03071233] ml-2 border-dashed"
               >
-                <div class="flex">
+                <div class="flex gap-2">
                   <img
                     src="B9A5-smart-ticketing-main/images/seat-gray.png"
                     alt=""
                   />
                   <p>Available</p>
                 </div>
-                <div class="flex">
+                <div class="flex gap-2">
                   <img
                     src="B9A5-smart-ticketing-main/images/seat-green-filled.png"
                     alt=""
                   />
-                  <p>Seat selected</p>
+                  <p class="text-[#1DD100]">
+                    Selected</p>
                 </div>
               </div>
               <div class="grid grid-cols-5 gap-5 p-5">
@@ -288,29 +290,29 @@
                   <p>A</p>
                 </div>
                 <div class="">
-                  <p
-                    class="border bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
+                  <p id="s"
+                    class="border seat bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
                   >
                     A1
                   </p>
                 </div>
                 <div class="">
-                  <p
-                    class="border bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
+                  <p id="s"
+                    class="border seat bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
                   >
                     A2
                   </p>
                 </div>
                 <div class="">
-                  <p
-                    class="border bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
+                  <p id="s"
+                    class="border seat bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
                   >
                     A3
                   </p>
                 </div>
                 <div class="">
-                  <p
-                    class="border bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
+                  <p id="s"
+                    class="border seat bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
                   >
                     A4
                   </p>
@@ -319,29 +321,29 @@
                   <p>B</p>
                 </div>
                 <div class="">
-                  <p
-                    class="border bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
+                  <p id="s"
+                    class="border seat bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
                   >
                     B1
                   </p>
                 </div>
                 <div class="">
-                  <p
-                    class="border bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
+                  <p id="s"
+                    class="border seat bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
                   >
                     B2
                   </p>
                 </div>
                 <div class="">
-                  <p
-                    class="border bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
+                  <p id="s"
+                    class="border seat bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
                   >
                     B3
                   </p>
                 </div>
                 <div class="">
-                  <p
-                    class="border bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
+                  <p id="s"
+                    class="border seat bg-[#0307121A] w-1/2 text-center py-2 rounded-xl"
                   >
                     B4
                   </p>
@@ -352,29 +354,31 @@
             <!-- 2nd part -->
             <div class="w-1/3 p-9  bg-[#F7F8F8] rounded-lg ">
               <div class="flex justify-between pb-3 border-b border-dashed border-[#0307121A]">
-                <p class="text-xl font-bold">Seat<span class=""><sup class="p-1 w-full bg-[#1DD100] rounded-2xl ">2</sup></span></p>
+                <p class="text-xl font-bold">Seat<span class="" ><sup class="p-1 w-full bg-[#1DD100] rounded-2xl ">2</sup></span></p>
                 <p class="text-xl font-bold">Class</p>
-                <p class="text-xl font-bold">Price</p>
+                <p class="text-xl font-bold" id="Price">Price</p>
               </div>
-              <div class="flex justify-between pb-3 border-b border-dashed border-[#0307121A]">
-                <p class="text-base ">A1</p>
-                <p class="text-base ">Economy</p>
-                <p class="text-base ">550</p>
-              </div>
-              <div class="flex justify-between pb-3 border-b border-dashed border-[#0307121A]">
-                <p class="text-base ">B1</p>
-                <p class="text-base ">Economy</p>
-                <p class="text-base ">550</p>
-              </div>
+<div id="main-container" class=" flex justify-between pb-3 border-b border-dashed border-[#0307121A]">
+  <div id="container-1" class="">
+         
+  </div>
+  <div id="container-2" class="">
+
+  </div>
+  <div id="container-3" class="">
+  
+  </div>
+</div>
+             
               <div class="flex justify-between pb-3 border-b border-dashed border-[#0307121A] mb-10">
                 <p class="text-xl font-bold">Total price</p>
                 
-                <p class="text-xl font-bold"><span>BDT</span>1100</p>
+                <p class="text-xl font-bold">BDT<span id="total-price">0</span></p>
               </div>
-        <div class="flex ">  <label class="relative w-full" for=""><input type="text" placeholder="Have any Coupon?" class="drop-shadow-lg rounded-xl p-2 h-[56px] w-full"><button class="btn btn-success bg-[#1DD100] text-white absolute right-1 bottom-1">Apply</button></label>
+        <div class="flex ">  <label class="relative w-full" for=""><input id="coupon-input" type="text" placeholder="Have any Coupon?" class="drop-shadow-lg rounded-xl p-2 h-[56px] w-full"><button id="apply-btn" class="btn btn-success bg-[#1DD100] text-white absolute right-1 bottom-1">Apply</button></label>
           </div>
           <div class="flex justify-between mt-10"><p class="text-2xl font-bold">Grand Total </p>
-          <p class="text-2xl font-bold"><span>BDT</span> 1100</p>
+          <p class="text-2xl font-bold">BDT<span id="grand-total-price">0</span></p>
           </div>
           <!-- <div><button class="w-full text-white bg-[#1DD100] rounded-2xl p-3 mt-10"> Next</button></div>
             </div> -->
