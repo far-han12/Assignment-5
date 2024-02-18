@@ -2,10 +2,12 @@
 
 // ticket selection
 let totalprice=0
-
+let c=7
+let b = 1
 let count= 0 
+const increasing=document.getElementById("increase-seat")
 const ticketSelection = document.getElementsByClassName("seat")
-
+const seatleft = document.getElementById("seats-left")
 for (let index = 0; index < ticketSelection.length; index++) {
     const element = ticketSelection[index];
 ;
@@ -13,10 +15,16 @@ for (let index = 0; index < ticketSelection.length; index++) {
     element.addEventListener("click",function(){
         element.style.backgroundColor = "#1DD100"
         element.style.color="white"
+        seatleft.innerText=c--
+        increasing.innerText=b++
+        if(seatleft.innerText<0){
+          alert("can't be negative")
+        }
         count++
 if(count>4){
     alert("You can not buy more than 4 tickets")
     element.style.backgroundColor="#0307121A"
+    
     return
 }
 
@@ -66,12 +74,14 @@ applyBtn.addEventListener('click',function(){
     const discountamount = totalprice*0.15
     document.getElementById("grand-total-price").innerText=totalprice-discountamount
     ci.classList.add("hidden")
+    applyBtn.classList.add("hidden")
   }
   
  else if(couponcode==="COUPLE20"){
     const discountamount = totalprice*0.20
     document.getElementById("grand-total-price").innerText=totalprice-discountamount
- 
+    ci.classList.add("hidden")
+    applyBtn.classList.add("hidden")
   }
   else{
     alert("wrong coupon code")
