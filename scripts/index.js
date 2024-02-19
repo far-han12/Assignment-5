@@ -27,10 +27,12 @@ for (let index = 0; index < ticketSelection.length; index++) {
           alert("can't be negative")
         }
         count++
+if(count>0){
+  document.getElementById("last-button").disabled=false
 
+}
 if(count===4){
   document.getElementById("apply-btn").disabled=false
-  document.getElementById("last-button").disabled=false
   }
 
         // appending
