@@ -28,7 +28,7 @@ for (let index = 0; index < ticketSelection.length; index++) {
         }
         count++
 
-if(count>0){
+if(count===4){
   document.getElementById("apply-btn").disabled=false
   document.getElementById("last-button").disabled=false
   }
