@@ -38,7 +38,7 @@ if(count>0){
         const tpp= document.getElementById("seat-per-price").innerText
         const ticketperprice=parseInt(tpp)
 const seatstatusname = document.getElementById("container-3")
-// const seatname = document.getElementById('s')
+
 const p3 = document.createElement("p")
 p3.innerText=this.innerText
 seatstatusname.appendChild(p3)
