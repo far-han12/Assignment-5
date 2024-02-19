@@ -32,9 +32,7 @@ if(count>0){
   document.getElementById("last-button").disabled=false
 
 }
-if(count===4){
-  document.getElementById("apply-btn").disabled=false
-  }
+
 
         // appending
         const mainpricecontainer=document.getElementById("main-container")
