@@ -73,17 +73,17 @@ document.getElementById("grand-total-price").innerText=totalprice
 
 const applyBtn = document.getElementById("apply-btn")
 applyBtn.addEventListener('click',function(){
- 
+  const cc1=document.getElementById("coupon-1").innerText
+  const cc2=document.getElementById("coupon-2").innerText
     const ci=document.getElementById("coupon-input")
     const cc = document.getElementById("coupon-container")
     const couponInput=ci.value
-    const couponcode1=couponInput.toUpperCase()
-    const couponcode2=couponInput[0].toUpperCase()
-    const couponcode3=couponcode2.concat("ouple").concat(" ").concat(20)
-    console.log(couponcode3);
-    const cc1=document.getElementById("coupon-1").innerText
-    const cc2=document.getElementById("coupon-2").innerText
-console.log(cc2);
+
+    const couponcode1=couponInput
+    const couponcode2=couponInput
+;
+
+
     
   if(couponcode1===cc1){
     const discountamount = totalprice*0.15
@@ -92,7 +92,7 @@ console.log(cc2);
     cc.classList.add("hidden")
   }
   
- else if(couponcode3===cc2){
+ else if(couponcode2===cc2){
     const discountamount = totalprice*0.20
     document.getElementById("grand-total-price").innerText=totalprice-discountamount
     cc.classList.add("hidden")
