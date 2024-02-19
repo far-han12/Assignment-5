@@ -15,10 +15,11 @@ for (let index = 0; index < ticketSelection.length; index++) {
     element.addEventListener("click",function (){
       if(count>3){
         alert("You can not buy more than 4 tickets")
-        element.style.backgroundColor="#0307121A"
+        
         return
       
     }
+  
         element.style.backgroundColor = "#1DD100"
         element.style.color="white"
         seatleft.innerText=c--
